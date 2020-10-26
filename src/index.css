@@ -11,3 +11,85 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.counter-value, .counter-button {
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.counter-button {
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 20px 40px;
+
+  height: 50px;
+  width: 50px;
+  
+  transition: .5s;
+}
+
+.counter-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.multi-counter {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  position: absolute;
+  top: 50px;
+}
+
+.container-group {
+  border-style: dashed;
+  margin: 10px 0;
+  padding: 15px 0 30px 0;
+}
+
+.container-group-label {
+  display: block;
+  font-size: 36px;
+}
+
+.container-group-input {
+  border-radius: 50px;
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+  width: 50%;
+}
+
+.counter-group {
+  border-color: white;
+  border-bottom-left-radius: 50px;
+  border-style: dashed;
+
+  min-height: 400px;
+  max-height: 400px;
+  margin: 10px 0;
+  padding: 10px 0;
+
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ddd;
+}

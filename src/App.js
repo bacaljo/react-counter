@@ -1,5 +1,6 @@
 import './App.css';
-import MultiCounter from './components/MultiCounter/'
+import './index.css';
+import MultiCounter from './components/MultiCounter'
 
 function App() {
   return (

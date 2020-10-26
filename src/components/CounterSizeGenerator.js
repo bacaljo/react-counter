@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './index.css'
 
 class CounterSizeGenerator extends Component {
     constructor(props) {
@@ -18,9 +17,9 @@ class CounterSizeGenerator extends Component {
 
     render() {
         return (
-            <div className="counter-size-generator">
-                <label className="counter-size-generator-label">Size</label>
-                <input className="counter-size-generator-size" 
+            <div className="container-group">
+                <label className="container-group-label">Size</label>
+                <input className="container-group-input" 
                     type="number" min={0} value={this.state.size} onChange={this.onGenerate}/>
             </div>
         )

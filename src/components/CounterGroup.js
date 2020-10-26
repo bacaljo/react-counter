@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import Counter from '../Counter/'
-
-import './index.css'
+import Counter from './Counter'
 
 class CounterGroup extends Component {
     constructor(props) {
