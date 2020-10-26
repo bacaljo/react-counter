@@ -1,0 +1,20 @@
+.counter-size-generator {
+    border-top-right-radius: 50px;
+    border-style: dashed;
+    padding: 30px 30px 60px 30px;
+}
+
+.counter-size-generator-label {
+    display: block;
+    font-size: 48px;
+}
+
+.counter-size-generator-size {
+    border-radius: 50px;
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 50%;
+}
