@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.counter {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
 .counter-value, .counter-button {
   font-size: 36px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
