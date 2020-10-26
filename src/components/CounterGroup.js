@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import Counter from './Counter'
 
 class CounterGroup extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     buildCounterComponents = (size) => {
         let counterComponents = []
 
