@@ -17,6 +17,11 @@ code {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+.counter-value {
+  display: inline-block;
+  min-width: 80px;
+}
+
 .counter-button {
   background-color: #777;
   border-style: none;
@@ -73,8 +78,8 @@ code {
 }
 
 .container-group-scrollable {
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 300px;
+  max-height: 300px;
 
   overflow-y: scroll;
 }
