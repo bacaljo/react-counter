@@ -1,0 +1,24 @@
+.counter-value, .counter-button {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.counter-button {
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    font-size: 70px;
+    margin: 20px 50px;
+
+    height: 100px;
+    width: 100px;
+    
+    transition: .5s;
+}
+
+.counter-button:hover {
+    background-color: white;
+    color: black;
+}
