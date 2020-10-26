@@ -1,0 +1,7 @@
+.multi-counter {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    position: fixed;
+    top: 50px;
+}
