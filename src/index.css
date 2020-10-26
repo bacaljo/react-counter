@@ -65,31 +65,25 @@ code {
   width: 50%;
 }
 
-.counter-group {
-  border-color: white;
-  border-bottom-left-radius: 50px;
-  border-style: dashed;
-
+.container-group-scrollable {
   min-height: 400px;
   max-height: 400px;
-  margin: 10px 0;
-  padding: 10px 0;
 
   overflow-y: scroll;
 }
 
-::-webkit-scrollbar {
+.container-group-scrollable::-webkit-scrollbar {
   width: 5px;
 }
 
-::-webkit-scrollbar-track {
+.container-group-scrollable::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+.container-group-scrollable::-webkit-scrollbar-thumb {
   background: white;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.container-group-scrollable::-webkit-scrollbar-thumb:hover {
   background: #ddd;
 }

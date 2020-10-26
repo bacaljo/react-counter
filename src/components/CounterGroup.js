@@ -21,7 +21,7 @@ class CounterGroup extends Component {
         const size = this.props.size
 
         return (
-            <div className="counter-group">
+            <div className="container-group container-group-scrollable">
                 {this.buildCounterComponents(size)}
             </div>
         )
