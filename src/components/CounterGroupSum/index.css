@@ -1,17 +1,17 @@
 .counter-group-sum {
     border-style: dashed;
-    margin: 20px 0;
-    padding: 30px 30px 60px 30px;
+    margin: 10px 0;
+    padding: 15px 0 30px 0;
 }
 
 .counter-group-sum-label {
     display: block;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 .counter-group-sum-sum {
     border-radius: 50px;
-    font-size: 48px;
+    font-size: 36px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
     padding: 10px 0;
