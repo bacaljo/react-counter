@@ -23,8 +23,8 @@ class MultiCounter extends Component {
         this.setState((prevState) => ({ sum: prevState.sum + 1 }))
     }
 
-    decrease() {
-        this.setState((prevState) => ({ sum: prevState.sum - 1 }))
+    decrease(count) {
+        this.setState((prevState) => ({ sum: prevState.sum - count }))
     }
 
     render() {
