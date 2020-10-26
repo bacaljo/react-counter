@@ -8,22 +8,19 @@ class Counter extends Component {
         this.state = {
             current: 0
         }
-
-        this.increase = this.increase.bind(this)
-        this.decrease = this.decrease.bind(this)
     }
 
-    increase() {
+    increase = () => {
         this.setState((prevState) => ({current: prevState.current + 1}), 
             () => this.props.increase())
     }
 
-    decrease(count) {
+    decrease = (count) => {
         this.setState((prevState) => ({current: prevState.current - count}), 
             () => this.props.decrease(count))
     }
 
-    componentWillUnmount() {
+    componentWillUnmount = () => {
         this.props.decrease(this.state.current)
     }
 

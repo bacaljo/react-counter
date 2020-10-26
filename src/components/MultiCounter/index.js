@@ -9,21 +9,17 @@ class MultiCounter extends Component {
         super(props)
 
         this.state = { size: 5, sum: 0}
-
-        this.onGenerate = this.onGenerate.bind(this)
-        this.increase = this.increase.bind(this)
-        this.decrease = this.decrease.bind(this)
     }
 
-    onGenerate(size) {
+    onGenerate = (size) => {
         this.setState({ size: size })
     }
 
-    increase() {
+    increase = () => {
         this.setState((prevState) => ({ sum: prevState.sum + 1 }))
     }
 
-    decrease(count) {
+    decrease = (count) => {
         this.setState((prevState) => ({ sum: prevState.sum - count }))
     }
 

@@ -6,11 +6,9 @@ import './index.css'
 class CounterGroup extends Component {
     constructor(props) {
         super(props)
-
-        this.buildCounterComponents = this.buildCounterComponents.bind(this)
     }
 
-    buildCounterComponents(size) {
+    buildCounterComponents = (size) => {
         let counterComponents = []
 
         for (let i = 0; i < size; i++) {

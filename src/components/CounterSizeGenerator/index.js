@@ -6,11 +6,9 @@ class CounterSizeGenerator extends Component {
         super(props)
 
         this.state = { size: this.props.size }
-
-        this.onGenerate = this.onGenerate.bind(this)
     }
 
-    onGenerate(event) {
+    onGenerate = (event) => {
         const size = event.target.value
 
         this.setState(() => {
