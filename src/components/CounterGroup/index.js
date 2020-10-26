@@ -14,7 +14,8 @@ class CounterGroup extends Component {
         let counterComponents = []
 
         for (let i = 0; i < size; i++) {
-            counterComponents[i] = <Counter key={i} />
+            counterComponents[i] = <Counter key={i} 
+                increase={this.props.increase} decrease={this.props.decrease} />
         }
 
         return counterComponents
