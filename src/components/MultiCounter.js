@@ -7,7 +7,7 @@ class MultiCounter extends Component {
     constructor(props) {
         super(props)
 
-        this.state = { size: 5, sum: 0}
+        this.state = { size: 0, sum: 0}
     }
 
     onGenerate = (size) => {
