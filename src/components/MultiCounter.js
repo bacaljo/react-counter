@@ -14,11 +14,11 @@ class MultiCounter extends Component {
         this.setState({ size: size })
     }
 
-    increase = () => {
+    onIncrease = () => {
         this.setState((prevState) => ({ sum: prevState.sum + 1 }))
     }
 
-    decrease = (count) => {
+    onDecrease = (count) => {
         this.setState((prevState) => ({ sum: prevState.sum - count }))
     }
 
@@ -28,7 +28,7 @@ class MultiCounter extends Component {
                 <CounterSizeGenerator size={this.state.size} onGenerate={this.onGenerate} />
                 <CounterGroupSum sum={this.state.sum} />
                 <CounterGroup size={this.state.size} 
-                    increase={this.increase} decrease={this.decrease} />
+                    onIncrease={this.onIncrease} onDecrease={this.onDecrease} />
             </div>
         )
     }

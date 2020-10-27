@@ -9,28 +9,28 @@ class Counter extends Component {
         }
     }
 
-    increase = () => {
+    onIncrease = () => {
         this.setState((prevState) => ({current: prevState.current + 1}), 
-            () => this.props.increase())
+            () => this.props.onIncrease())
     }
 
-    decrease = () => {
+    onDecrease = () => {
         const ONE = 1
 
         this.setState((prevState) => ({current: prevState.current - ONE}), 
-            () => this.props.decrease(ONE))
+            () => this.props.onDecrease(ONE))
     }
 
     componentWillUnmount = () => {
-        this.props.decrease(this.state.current)
+        this.props.onDecrease(this.state.current)
     }
 
     render() {
         return (
             <div className="counter">
-                <button className="counter-button" onClick={this.decrease}>-</button>
+                <button className="counter-button" onClick={this.onDecrease}>-</button>
                 <span className="counter-value">{this.state.current}</span>
-                <button className="counter-button" onClick={this.increase}>+</button>
+                <button className="counter-button" onClick={this.onIncrease}>+</button>
             </div>
         )
     }
