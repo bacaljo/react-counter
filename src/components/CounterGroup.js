@@ -1,4 +1,4 @@
-import Counter from './Counter'
+import CounterContainer from '../containers/CounterContainer'
 
 function CounterGroup(props) {
     function initializeArrayKeys(size) {
@@ -9,8 +9,7 @@ function CounterGroup(props) {
         <div className="container-group container-group-scrollable">
             {
                 initializeArrayKeys(props.size).map(key =>
-                    <Counter key={key} onIncrease={props.onIncrease} 
-                        onDecrease={props.onDecrease} />
+                    <CounterContainer key={key} onDecrease={props.onDecrease} />
                 )
             }
         </div>

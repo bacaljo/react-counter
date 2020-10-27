@@ -3,3 +3,9 @@ export const updateCounterSize = size => {
         type: 'UPDATE_COUNTER_SIZE', payload: size
     }
 }
+
+export const increaseSum = () => {
+    return {
+        type: 'INCREASE_SUM'
+    }
+}
