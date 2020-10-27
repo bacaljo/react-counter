@@ -58,7 +58,7 @@ code {
 }
 
 .container-group {
-  border-style: solid;
+  border-style: dashed solid;
   border-width: 1px;
   margin: 10px 0;
   padding: 15px 0 30px 0;
@@ -66,10 +66,16 @@ code {
 
 .container-group:first-child {
   border-top-right-radius: 50px;
+
+  border-bottom-style: dashed;
+  border-top-style: solid;
 }
 
 .container-group:last-child {
   border-bottom-left-radius: 50px;
+  
+  border-bottom-style: solid;
+  border-top-style: dashed;
 }
 
 .container-group-label {
@@ -78,6 +84,7 @@ code {
 }
 
 .container-group-input {
+  border-style: dotted;
   border-radius: 50px;
   font-size: 36px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -85,6 +92,12 @@ code {
   padding: 10px 0;
   text-align: center;
   width: 50%;
+}
+
+.container-group-input[disabled] {
+  background-color: white;
+  border-color: #777;
+  color: #000;
 }
 
 .container-group-scrollable {
