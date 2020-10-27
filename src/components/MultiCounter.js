@@ -9,17 +9,13 @@ class MultiCounter extends Component {
 
         this.state = { size: 0, sum: 0}
     }
-    onDecrease = (count) => {
-        this.setState((prevState) => ({ sum: prevState.sum - count }))
-    }
 
     render() {
         return (
             <div className="multi-counter">
                 <CounterSizeGeneratorContainer size={this.state.size} />
                 <CounterGroupSumContainer sum={this.state.sum} />
-                <CounterGroupContainer size={this.state.size} 
-                    onIncrease={this.onIncrease} onDecrease={this.onDecrease} />
+                <CounterGroupContainer size={this.state.size} />
             </div>
         )
     }

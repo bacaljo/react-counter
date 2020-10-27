@@ -9,6 +9,10 @@ const size = (state = 0, action) => {
 const sum = (state = 0, action) => {
     if (action.type === 'INCREASE_SUM') {
         return state + 1
+    } else if (action.type === 'DECREASE_SUM') {
+        return state - 1 
+    } else if (action.type === 'DECREASE_COUNTER_VALUE') {
+        return state - action.payload 
     }
     return state
 }
