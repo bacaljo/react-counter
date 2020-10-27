@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CounterSizeGenerator from './CounterSizeGenerator'
+import CounterSizeGeneratorContainer from '../containers/CounterSizeGeneratorContainer'
 import CounterGroupSum from './CounterGroupSum'
 import CounterGroup from './CounterGroup'
 
@@ -25,7 +25,7 @@ class MultiCounter extends Component {
     render() {
         return (
             <div className="multi-counter">
-                <CounterSizeGenerator size={this.state.size} onGenerate={this.onGenerate} />
+                <CounterSizeGeneratorContainer size={this.state.size} />
                 <CounterGroupSum sum={this.state.sum} />
                 <CounterGroup size={this.state.size} 
                     onIncrease={this.onIncrease} onDecrease={this.onDecrease} />
