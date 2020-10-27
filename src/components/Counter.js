@@ -15,10 +15,8 @@ class Counter extends Component {
     }
 
     onDecrease = () => {
-        const ONE = 1
-
-        this.setState((prevState) => ({current: prevState.current - ONE}), 
-            () => this.props.decreaseSum(ONE))
+        this.setState((prevState) => ({current: prevState.current - 1}), 
+            () => this.props.decreaseSum())
     }
 
     componentWillUnmount = () => {
