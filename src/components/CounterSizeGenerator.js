@@ -7,7 +7,7 @@ class CounterSizeGenerator extends Component {
         this.state = { size: this.props.size }
     }
 
-    onGenerate = (event) => {
+    onChange = (event) => {
         const size = event.target.value
 
         this.setState(() => {
@@ -20,7 +20,7 @@ class CounterSizeGenerator extends Component {
             <div className="container-group">
                 <label className="container-group-label">Size</label>
                 <input className="container-group-input" 
-                    type="number" min={0} value={this.state.size} onChange={this.onGenerate}/>
+                    type="number" min={0} value={this.state.size} onChange={this.onChange}/>
             </div>
         )
     }
