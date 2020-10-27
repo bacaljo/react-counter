@@ -2,12 +2,7 @@ import Counter from './Counter'
 
 function CounterGroup(props) {
     function initializeArrayKeys(size) {
-        const ARRAY_KEYS = []
-        for (let i = 0; i < size; i++) {
-            ARRAY_KEYS[i] = i
-        }
-
-        return ARRAY_KEYS
+        return Array.from(Array(Number(size)).keys())
     }
 
     return (
