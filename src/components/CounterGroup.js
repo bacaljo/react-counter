@@ -1,20 +1,23 @@
 import Counter from './Counter'
 
 function CounterGroup(props) {
-    function buildCounterComponents(size) {
-        let counterComponents = []
-
+    function initializeArrayKeys(size) {
+        const ARRAY_KEYS = []
         for (let i = 0; i < size; i++) {
-            counterComponents[i] = <Counter key={i} onIncrease={props.onIncrease} 
-                onDecrease={props.onDecrease} />
+            ARRAY_KEYS[i] = i
         }
 
-        return counterComponents
+        return ARRAY_KEYS
     }
 
     return (
         <div className="container-group container-group-scrollable">
-            {buildCounterComponents(props.size)}
+            {
+                initializeArrayKeys(props.size).map(key =>
+                    <Counter key={key} onIncrease={props.onIncrease} 
+                        onDecrease={props.onDecrease} />
+                )
+            }
         </div>
     )
 }
